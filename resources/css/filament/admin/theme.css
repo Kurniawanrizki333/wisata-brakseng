@@ -1,0 +1,10 @@
+@import 'tailwindcss' source(none);
+
+@import '../../../../vendor/filament/filament/resources/css/index.css';
+
+/* Scan Filament's own resources + generated resources/pages/widgets */
+@source '../../../../app/Filament';
+@source '../../../../resources/views/filament';
+
+/* Scan custom Blade views rendered inside the panel (e.g. modalContent views) */
+@source '../../../../resources/views/components';

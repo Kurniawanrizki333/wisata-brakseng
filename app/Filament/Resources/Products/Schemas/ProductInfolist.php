@@ -18,7 +18,7 @@ class ProductInfolist
                 TextEntry::make('description')
                     ->columnSpanFull(),
                 TextEntry::make('price')
-                    ->money(),
+                    ->formatStateUsing(fn ($state) => $state !== null ? 'Rp ' . number_format($state, 0, ',', '.') : '-'),
                 TextEntry::make('stock')
                     ->numeric(),
                 ImageEntry::make('image')

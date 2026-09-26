@@ -20,7 +20,7 @@ class DestinationInfolist
                 TextEntry::make('description')
                     ->columnSpanFull(),
                 TextEntry::make('ticket_price')
-                    ->money(),
+                    ->formatStateUsing(fn ($state) => $state !== null ? 'Rp ' . number_format($state, 0, ',', '.') : '-'),
                 TextEntry::make('operating_hours')
                     ->placeholder('-'),
                 TextEntry::make('address')

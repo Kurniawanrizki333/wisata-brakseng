@@ -31,7 +31,7 @@
     </main>
 
     <footer class="border-t border-stone-200 bg-white">
-        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-3 lg:px-8">
+        <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:px-6 md:grid-cols-2 lg:px-8">
             <div>
                 <p class="font-bold text-emerald-800">Desa Wisata Sumberbrantas</p>
                 <p class="mt-3 text-sm leading-6 text-stone-600">Wisata alam, edukasi pertanian, event desa, dan produk UMKM lokal di kawasan hulu Brantas.</p>
@@ -44,10 +44,6 @@
                     <a href="{{ route('produk.index') }}">Produk UMKM</a>
                     <a href="{{ route('contact.index') }}">Kontak</a>
                 </div>
-            </div>
-            <div class="text-sm text-stone-600">
-                <p class="font-semibold text-stone-900">Admin</p>
-                <a class="mt-3 inline-block hover:text-emerald-700" href="/admin">Masuk Admin Panel</a>
             </div>
         </div>
     </footer>

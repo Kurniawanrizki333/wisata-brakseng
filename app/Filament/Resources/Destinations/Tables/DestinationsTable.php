@@ -31,7 +31,7 @@ class DestinationsTable
                     ->searchable(),
                 TextColumn::make('ticket_price')
                     ->label('Harga tiket')
-                    ->money('IDR')
+                    ->formatStateUsing(fn ($state) => $state !== null ? 'Rp ' . number_format($state, 0, ',', '.') : '-')
                     ->sortable(),
                 TextColumn::make('operating_hours')
                     ->label('Jam')

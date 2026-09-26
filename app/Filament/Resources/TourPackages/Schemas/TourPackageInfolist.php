@@ -18,7 +18,7 @@ class TourPackageInfolist
                 TextEntry::make('description')
                     ->columnSpanFull(),
                 TextEntry::make('price')
-                    ->money(),
+                    ->formatStateUsing(fn ($state) => $state !== null ? 'Rp ' . number_format($state, 0, ',', '.') : '-'),
                 TextEntry::make('duration'),
                 TextEntry::make('facility')
                     ->placeholder('-')
